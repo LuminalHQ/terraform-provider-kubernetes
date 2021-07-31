@@ -1,0 +1,11 @@
+name: terraform-provider-kubernetes
+kind: go-library
+exports:
+  source:
+    resources:
+    - go.mod
+    - go.sum
+    - "kubernetes/**/*.go"
+    ignore:
+    - "**/*_test.go"
+    - "vendor/**/*.go"
